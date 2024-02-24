@@ -405,7 +405,7 @@ function Save() {
     const ToUpperCase = ["x", "y", "z", "r", "g", "b", "a", "properties", "item"]
     const ToLowerCase = ["Game", "Boolean"]
     ToUpperCase.forEach(tagName => {
-        XMLString = XMLString.replaceAll("<" + tagName + ">", "<" + Capitalize(tagName) + ">")
+        XMLString = XMLString.replaceAll("<" + tagName, "<" + Capitalize(tagName))
         XMLString = XMLString.replaceAll("</" + tagName + ">", "</" + Capitalize(tagName) + ">")
     })
     ToLowerCase.forEach(tagName => {
