@@ -1,0 +1,33 @@
+<html data-bs-theme="dark">
+    <head>
+        <!-- META TAGS -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- PUBLIC -->
+        <title>Polytoria JSON to XML Format</title>
+    
+        <!-- RESOURCES -->
+        <link href="https://cdn.jsdelivr.net/npm/halfmoon@2.0.1/css/halfmoon.min.css" rel="stylesheet" integrity="sha256-SsJizWSIG9JT9Qxbiy8xnYJfjCAkhEQ0hihxRn7jt2M=" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <main id="page">
+            <div class="text-center mb-3">
+                <h1 id="page-title">Polytoria <code>.json</code> -> <code>.xml</code></h1>
+                <p class="mb-0">Quickly convert your JSON Polytoria files into the old XML format!</p>
+                <small class="text-muted">(currently you have to manually decompress and convert to XML format but this code will do the rest)</small>
+            </div>
+
+            <input id="file" type="file" class="form-control form-control-lg mb-3" accept=".poly, .ptmd">
+
+            <div id="sandbox" style="display: none; min-height: 581px; width: 100%;"></div>
+
+            <div role="group" class="btn-group w-100">
+                <button id="submit-btn" class="btn btn-primary btn-lg w-100" onclick="Read()">Submit</button>
+                <button id="save-btn" class="btn btn-success btn-lg w-100" onclick="Save()" disabled>Save</button>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
