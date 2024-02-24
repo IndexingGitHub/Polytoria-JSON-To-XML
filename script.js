@@ -409,7 +409,7 @@ function Save() {
         XMLString = XMLString.replaceAll("</" + tagName + ">", "</" + Capitalize(tagName) + ">")
     })
     ToLowerCase.forEach(tagName => {
-        XMLString = XMLString.replaceAll("<" + tagName + ">", "<" + tagName.toLowerCase() + ">")
+        XMLString = XMLString.replaceAll("<" + tagName, "<" + tagName.toLowerCase())
         XMLString = XMLString.replaceAll("</" + tagName + ">", "</" + tagName.toLowerCase() + ">")
     })
 
