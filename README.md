@@ -1,7 +1,7 @@
 # Polytoria-JSON-To-XML
+
+Quickly convert your JSON Polytoria files into the old XML format!
  
-to-do:
-- make proper README.md
-- fix materials for some reason always loading as "Plastic" (they loaded correctly before which is weird)
-- add json automatically decompressing
-- add json -> xml before parser
+### To-Do
+
+- [ ] Automatically make the `.poly` file decompressed rather than requiring the user to do so
